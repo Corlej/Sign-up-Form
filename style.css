@@ -1,0 +1,276 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    max-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.backgroundimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./img/halie-west-GubApA69UZM-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    flex: 3%;
+    width: 35vw;
+    height: 100vh;
+    padding: 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Norse-Bold, 'Times New Roman', Times, serif;
+    margin-top: 20vh;
+    width: auto;
+    background-color: rgba( 0, 0, 0, .4);
+    padding: 0px 0px;
+}
+
+.banner img {
+    height: 110px;
+    padding: 8px 10px 8px 0px;
+}
+
+.banner p {
+    display: flex;
+    align-self: center;
+    font-size: 5rem;
+    color: white;
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    opacity: 90%;
+}
+
+.citation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 8px;
+    color: rgba(255, 255, 255, .75);
+    background-color: rgba( 0, 0, 0, .25);
+    height: 20px;
+    margin-bottom: 0;
+}
+
+.citation a {
+    appearance: none;
+    color: rgba(255, 255, 255, .75);
+
+}
+
+.rightcontainer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 62vw;
+    height: 100vh;
+    background-color: #f4f6f8;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-bottom: 4em;
+    padding-right: 15%;
+    color: rgba(0, 0, 0, .8);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffffe;
+    box-shadow: 0px 3px 8px .5px rgba( 10, 10, 10, .1);;
+}
+
+.form > h2 {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0em;
+    padding: .5em 0em .5em 2em;
+    color: rgba(0, 0, 0, .8);
+}
+
+.group1,
+.group2,
+.group3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .50em 0em;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.password,
+.confirm-password {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    font-weight: 800;
+    color:rgba(10, 10, 10, 0.2);
+    padding-left: 4em;
+    margin-right: 3em;
+}
+
+#first-name,
+#last-name,
+#email,
+#phone,
+#password,
+#confirm-password {
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+    width: 150px;
+    height: 1em;
+    border: solid 1px;
+    background-color: #fffefe;
+    border-color: #e8e9e9;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline:solid 1px blue;
+    box-shadow: 2px 3px 5px 0px rgba( 10, 10, 10, .1);
+}
+
+input:invalid,
+input:required {
+    outline:solid 1px red;
+}
+
+label {
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: rgba(10, 10, 10, .7);
+}
+
+.form p {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #cc5d5c;
+    margin-top: 3px;
+    padding-bottom: 1em;
+    padding-left: 2rem;
+}
+
+.submit {
+    appearance: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 0px rgba( 0, 0, 0, .2);
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    color: #fffefe;
+    background-color: #9f7759;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    height: 30px;
+    width: 150px;
+    margin-top: 2em;
+    margin-left: 5%;
+}
+
+.login {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-left: 5%;
+}
+
+.rightcontainer p a:link,
+.rightcontainer p a:visited {
+    appearance: none;
+    text-decoration: none;
+    color: #9f7759;
+    font-weight: 900;
+}
+
+@media screen and (max-width:700px){
+    
+    .backgroundimg {
+        width: 50%;
+    }
+
+    .rightcontainer {
+        width: 50%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 10%;
+    }
+
+    
+    .form h2 {
+        margin-top: 1em;
+    }
+    .form h2,
+    .group1,
+    .group2,
+    .group3 {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 1em;
+        gap: 5px;
+    }
+    
+    .input {
+        gap:0px;
+        margin:0;
+        padding:0;
+    }
+
+    .form p {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+
+    .groups {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blue;
+    }
+    
+    .group2 {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+}
